@@ -1,4 +1,15 @@
 import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import Portfolio from "@/components/Portfolio";
+import About from "@/components/About";
+import Services from "@/components/Services";
+import OurPhilosophy from "@/components/OurPhilosophy";
+import OurTeam from "@/components/OurTeam";
+import TrackRecord from "@/components/TrackRecord";
+import Testimonials from "@/components/Testimonials";
+import Pricing from "@/components/Pricing";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <main className="min-h-screen bg-white">
@@ -8,70 +19,60 @@ export default function Home() {
 
 
       {/* 主视觉 */}
-      <section className="px-10 py-32">
+      <Hero />
 
-        <h2 className="text-6xl font-bold max-w-4xl">
-          QuantUnity
-          <br />
-          QuantUnity Investors Group (QIG) 
-        </h2>
+      <Portfolio />
 
-        <p className="mt-8 text-xl text-gray-600 max-w-xl">
-          致力于通过尖端量化投资策略与个人投资者的智慧融合，推动美股、加密货币等多元资产的价值发现与市场创新
-        </p>
+      <About />
+      
+      <Services />
 
+      <OurPhilosophy />
 
-        <button className="mt-10 px-8 py-4 bg-black text-white rounded">
-          了解更多
-        </button>
+      <OurTeam />  
 
-      </section>
+      <TrackRecord />
 
+      <Testimonials />
 
-      {/* 公司介绍 */}
-      <section className="px-10 py-20 bg-gray-100">
+      <Pricing />
 
-        <h3 className="text-4xl font-bold">
-          About QIG
-        </h3>
+      <Contact />
 
-        <p className="mt-5 max-w-2xl text-gray-600">
-          我们结合数据分析、金融研究和风险管理，
-          构建现代化投资体系。
-        </p>
-
-      </section>
-
+      <Footer />
 
       {/* 服务 */}
+      {/* 
       <section className="px-10 py-20">
 
         <h3 className="text-4xl font-bold">
           Our Services
         </h3>
 
-        <div className="grid grid-cols-3 gap-8 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-10">
 
-          <div className="border p-8">
+          <div className="border p-6 lg:p-8 rounded-xl hover:shadow-lg transition">
             Asset Management
           </div>
 
-          <div className="border p-8">
+          <div className="border p-6 lg:p-8 rounded-xl hover:shadow-lg transition">
             Quant Strategy
           </div>
 
-          <div className="border p-8">
+          <div className="border p-6 lg:p-8 rounded-xl hover:shadow-lg transition">
             Risk Management
           </div>
 
         </div>
 
       </section>
+      
 
 
-      <footer className="px-10 py-10 border-t">
+      <footer className="px-6 md:px-10 py-10 border-t text-sm text-gray-500">
         © 2026 QIG Investment Group
       </footer>
+      */}
       
     </main>
   );
